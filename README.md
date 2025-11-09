@@ -18,21 +18,8 @@ It automates quick HTTP checks, optional directory enumeration with `gobuster`, 
 
 ---
 
-## Installation / prerequisites
+## Usage
 
-On your attacker box (Kali recommended):
-
-```bash
-# Python 3 (usually preinstalled)
-python3 --version
-
-# Optional but recommended for HTTP handling
-pip3 install requests
-
-# Tools the script may call:
-sudo apt update
-sudo apt install nmap gobuster -y
-Usage
 # Basic usage (default: top 1000 popular ports, -sV -sC always enabled):
 python3 dude.py -t 10.10.11.93
 
