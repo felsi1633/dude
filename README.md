@@ -32,3 +32,12 @@ pip3 install requests
 # Tools the script may call:
 sudo apt update
 sudo apt install nmap gobuster -y
+Usage
+# Basic usage (default: top 1000 popular ports, -sV -sC always enabled):
+python3 dude.py -t 10.10.11.93
+
+# Scan all ports (equivalent to -p -):
+python3 dude.py -t 10.10.11.93 --all
+
+# Use a custom gobuster wordlist:
+python3 dude.py -t 10.10.11.93 --gobuster-wordlist /path/to/wordlist.txt
